@@ -1,0 +1,30 @@
+//vars
+@import "./utils/vars";
+
+//base styles
+
+@import "./base/reset";
+@import "./base/base";
+@import "./base/typography";
+
+// components styles (btn, section, etc)
+
+@import "./components/button";
+@import "./components/hero";
+@import "./components/modal-form";
+@import "./components/benefits";
+@import "./components/works";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/portfolio";
+
+
+//layouts
+@import "./layout/header";
+@import "./layout/footer";
+
+//vendors
+@import "./vendors/vendors";
+
+
+

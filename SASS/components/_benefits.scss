@@ -1,0 +1,45 @@
+/* цвет  заголовка и текста секций Benefits*/
+
+.benefits{
+  padding: 94px 0;
+}
+
+.benefits__list {
+  display: flex;
+  align-items: center;
+}
+
+.benefits__item {
+  width: 270px;
+  margin-right: 30px;
+}
+.benefits__item:last-child {
+  margin-right: 0;
+}
+/* добавляем изображение перед списком */
+
+.benefits__icon {
+  display: flex;
+  background-color: var(--secondary-background-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .benefits-item::before{
+display: block;
+content: "";
+height: 120px;
+background-repeat: no-repeat;
+background-position: center;
+background-color: var(--secondary-background-color);
+margin-bottom: 30px;
+border-radius: 4px;
+} */
+/* иконки benefits */
+/* .benefits-item:nth-child(1)::before{background-image: url(../IMG/benefits/antenna\ 1.svg);} 
+.benefits-item:nth-child(2)::before{background-image: url(../IMG/benefits/clock\ 1.svg);}
+.benefits-item:nth-child(3)::before{background-image: url(../IMG/benefits/diagram\ 1.svg);}
+.benefits-item:nth-child(4)::before{background-image: url(../IMG/benefits/astronaut\ 1.svg);}  */
+

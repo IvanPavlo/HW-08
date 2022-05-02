@@ -1,0 +1,19 @@
+/* Оформления чем мы занимаемся */
+.works {
+    padding-bottom: 94px;
+  }
+  
+  .works__list {
+    display: flex;
+  }
+  
+  .works__item {
+    position: relative;
+    margin-right: 30px;
+  }
+  .works__item:last-child {
+    margin-right: 0;
+  }
+  
+ 
+  

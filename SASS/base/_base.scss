@@ -1,0 +1,30 @@
+/* Используемые шрифты */
+/* Шрифт лого Raleway, жирность 700
+Шрифт остального текста Roboto, жирность 900 герой, 700 заголовки, 500 нави, 400 текст  */
+
+body {
+    background-color: var(--header-background-color);
+    color: var(--primary-text-color);
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+
+/*  размер контейнера для основных елементов 1200 px */
+.conteiner {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Portfolio Page */
+
+.section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }

@@ -1,0 +1,64 @@
+/* Секция наши клиенты */
+
+.clients {
+    background-color: var(--header-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  
+  .clients__list {
+    display: flex;
+  }
+  
+  .client__list {
+    display: flex;
+  }
+  
+  .client__link:not(:last-child) {
+    margin-right: 30px;
+   
+  }
+  
+  .clients__item {
+    display: flex;
+    height: 92px;
+    width: 170px;
+    background-color: transparent;
+    border: 1px solid#AFB1B8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+    &:focus, &:hover{
+    border-color: var(--accent-color);
+    }
+    &:hover .client__icon {
+      fill:var(--accent-color);
+    }
+    &:focus .client__icon {
+      fill:var(--accent-color);
+    }
+  }
+  
+  .client__icon {
+    fill: var(--social-link_color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+      // Реализовано через &
+
+
+  // .clients__item:hover .client__icon {
+  //   fill: var(--accent-color);
+  // }
+  
+  // .clients__item:focus .client__icon {
+  //   fill: var(--accent-color);
+  // }
+  
+  // .clients__item:hover,
+  // .clients__item:focus {
+  //   border-color: var(--accent-color);
+  // }

@@ -1,0 +1,125 @@
+/* Footer */
+.footer {
+    background-color: var(--footer-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer-conteiner {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  
+  .address {
+    color: var(--header-background-color);
+    text-decoration: none;
+    font-style: normal;
+    margin-top: 20px;
+  }
+  .address__link {
+    color: var(--footer-contact-color);
+    text-decoration: none;
+    font-style: normal;
+  }
+  .footer .logo-studio {
+    color: var(--header-background-color);
+    text-decoration: none;
+  }
+   
+  .address__item{
+  margin-top: 9px; 
+  }
+  
+  /* JOIN US оформление */
+  
+  .join-us {
+    margin-left: 70px;
+  }
+  
+  .join-us-title {
+    color: var(--header-background-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  
+  .social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    &:hover, &:focus {
+        background-color: var(--accent-color);
+      }
+    &:hover .join-us-icon {
+        fill: var(--header-background-color);
+  }
+    &:focus .join-us-icon {
+        fill: var(--header-background-color);
+}
+  }
+  .join-us-list {
+    display: flex;
+    margin-top: 20px;
+  }
+  .join-us-icon {
+    fill: var(--header-background-color);
+  }
+// реализовано через &
+
+//   .social-link:hover,
+//   .social-link:focus {
+//     background-color: var(--accent-color);
+//   }
+//   .social-link:focus .join-us-icon {
+//     fill: var(--header-background-color);
+//   }
+//   .social-link:hover .join-us-icon {
+//     fill: var(--header-background-color);
+//   }
+  
+  .footer-social-link {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Оформление подписки */
+  .subscribe {
+    margin-left: 93px;
+  }
+  
+  .subscribe-title {
+      color: var(--header-background-color);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+  }
+  
+  .subscribe-form{
+      display: flex;
+      align-items: center;
+  }
+  
+  .subscribe-input {
+    width: 358px;
+    color: #FFFFFF;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 16px;
+    margin-right: 12px;
+  }
+  
+  .subscribe-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+ 
