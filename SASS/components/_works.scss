@@ -1,10 +1,14 @@
 /* Оформления чем мы занимаемся */
 .works {
     padding-bottom: 94px;
+    @include mq(notDesktop){
+      display: none;
+    }
   }
   
   .works__list {
     display: flex;
+    justify-content: center;
   }
   
   .works__item {

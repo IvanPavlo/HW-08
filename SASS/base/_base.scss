@@ -15,16 +15,35 @@ body {
 
 /*  размер контейнера для основных елементов 1200 px */
 .conteiner {
+  @include mq(mobile-only){
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mq(tablet){
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mq(desktop){
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
   }
-
+}
   /* Portfolio Page */
 
 .section-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
+    @include mq(notDesktop){
+    padding-top:60px;
+    padding-bottom: 60px;
+    }
   }

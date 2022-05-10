@@ -78,10 +78,31 @@
   
   .filter-button {
     margin-right: 30px;
+    @include mq(mobile-only){
+      margin-right: 8px;
+      margin-bottom: 15px;
+      }
+    @include mq(tablet-only){
+      margin-right: 8px;
   }
+}
+
   .filter-button:last-child {
     margin-right: 0;
   }
+  .filter-button:nth-child(2n+3){
+    @include mq(mobile-only){
+    margin-right: 0;
+  }
+}
+
+  .filter-button:nth-child(n+4){
+    @include mq(mobile-only){
+    margin-bottom: 0;
+  }
+  }
+
+
   
   .filter-button {
     color: var(--primary-text-color);

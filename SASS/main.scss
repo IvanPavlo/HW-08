@@ -1,5 +1,6 @@
 //vars
 @import "./utils/vars";
+@import "./utils/mixin";
 
 //base styles
 
@@ -17,6 +18,7 @@
 @import "./components/team";
 @import "./components/clients";
 @import "./components/portfolio";
+@import "./components/mobile-menu";
 
 
 //layouts

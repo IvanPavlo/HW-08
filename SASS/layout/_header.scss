@@ -3,7 +3,7 @@
     display: flex;
     border: 1px solid var(--header-border-color);
   }
-  
+
   .header-conteiner {
     display: flex;
     align-items: center;
@@ -21,7 +21,13 @@
     display: flex;
     align-items: center;
     margin-left: 92px;
+    @include mq(mobile-only){
+      display: none;
+    }
+    @include mq(tablet-only){
+      margin-left: 88px;
   }
+}
   
   /* убираем маржин правого пункта */
   .site-nav__item:not(:last-child) {
@@ -78,8 +84,18 @@
     margin-left: auto;
     align-items: center;
     justify-content: center;
+
+    @include mq(mobile-only){
+      display: none;
+    }
+    @include mq(tablet-only){
+      flex-direction: column;
+      margin-left: auto;
+      align-items: flex-start;
+      margin-right: 15px;
   }
-  
+}
+
   .header-contact__link {
     display: flex;
     align-items: center;
@@ -96,7 +112,8 @@
     }
     &:focus, &:hover .header-contact__icon{
       fill: var(--accent-color);
-  }
+    }
+ 
 }
 
   /* Ховер фокус контактов хедера  реализовани через  & */
@@ -110,9 +127,19 @@
   //   fill: var(--accent-color);
   // }
   
+
+  .header-contact__item:not(:last-child){
+  @include mq(tablet-only){
+  margin-bottom: 10px;
+  }
+  }
+
   .header-contact__item:not(:last-child) {
+    @include mq(desktop){
     margin-right: 50px;
   }
+  }
+
   .header-contact__icon {
     margin-right: 10px;
     fill: var(--secondary-text-color);

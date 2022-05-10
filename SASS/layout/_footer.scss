@@ -8,14 +8,32 @@
   .footer-conteiner {
     display: flex;
     align-items: baseline;
+    @include mq(mobile-only){
+    flex-direction: column;
+    align-items: center;
+    }
+    @include mq(tablet-only){
+    display: flex;
+    flex-wrap: wrap;
+    }
+}
+
+.footer-addres{
+  @include mq(notDesktop){
+  display: block;
+  text-align: center;
+  }   
+  @include mq(tablet-only){
+    margin-left: 76px;
   }
-  
+}
   
   .address {
     color: var(--header-background-color);
     text-decoration: none;
     font-style: normal;
     margin-top: 20px;
+  
   }
   .address__link {
     color: var(--footer-contact-color);
@@ -35,6 +53,13 @@
   
   .join-us {
     margin-left: 70px;
+    @include mq(mobile-only){
+    margin-top: 60px;
+    margin-left: 0;
+    }
+    @include mq(tablet-only){
+    margin-left: 165px;
+    }
   }
   
   .join-us-title {
@@ -43,6 +68,9 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    @include mq(notDesktop){
+      text-align: center;
+    }
   }
   
   .social-link {
@@ -89,7 +117,20 @@
   /* Оформление подписки */
   .subscribe {
     margin-left: 93px;
+    @include mq(mobile-only){
+    margin-left: 0;
+    margin-top: 60px;
+    }
+  
+    @include mq(notDesktop){
+    text-align: center;
   }
+  @include mq(tablet-only){
+    margin: 60px auto;
+  }
+
+  }
+
   
   .subscribe-title {
       color: var(--header-background-color);
@@ -98,11 +139,13 @@
       line-height: 1.14;
       text-transform: uppercase;
       margin-bottom: 20px;
-  }
-  
+}
   .subscribe-form{
       display: flex;
       align-items: center;
+      @include mq(notDesktop){
+        flex-direction: column;
+        }
   }
   
   .subscribe-input {
@@ -116,6 +159,9 @@
     padding-top: 15px;
     padding-left: 16px;
     margin-right: 12px;
+    @include mq(notDesktop){
+      margin: 20px auto;
+      }
   }
   
   .subscribe-input::placeholder {
